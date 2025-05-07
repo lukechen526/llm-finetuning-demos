@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "LLM Finetuning Development Environment",
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
+	"forwardPorts": [
+		8888
+	],
+	"features": {
+		"ghcr.io/va-h/devcontainers-features/uv:1": {},
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+		"ghcr.io/devcontainers/features/git-lfs:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.pylint",
+				"ms-python.flake8",
+				"ms-python.black-formatter",
+				"njpwerner.autodocstring",
+				"matangover.mypy",
+				"ms-python.autopep8",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.vscode-jupyter-powertoys",
+				"ms-toolsai.jupyter-hub"
+			]
+		}
+	},
+	"postCreateCommand": "uv venv && uv sync",
+	"runArgs": [
+		"--gpus",
+		"all"
+	]
+}

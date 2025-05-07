@@ -1,0 +1,15 @@
+[project]
+name = "llm-finetune-demos"
+version = "0.1.0"
+description = "Examples of fine-tuning Large Language Models (LLMs)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bitsandbytes>=0.45.5",
+    "jupyter>=1.1.1",
+    "pip>=25.1.1",
+    "tqdm>=4.67.1",
+    "triton>=3.2.0",
+    "unsloth>=2025.4.7",
+    "vllm>=0.8.5.post1",
+]
