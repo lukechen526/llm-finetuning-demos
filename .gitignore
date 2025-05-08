@@ -176,3 +176,13 @@ cython_debug/
 # Unsloth
 unsloth_compiled_cache/
 adapter_config.json
+outputs/
+grpo/grpo_saved_lora/
+
+# Weights and checkpoints
+*.ckpt
+*.safetensors
+*.pt
+*.bin
+
+wandb/
