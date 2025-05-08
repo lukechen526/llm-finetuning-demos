@@ -8,8 +8,8 @@ This project demonstrates examples of fine-tuning Large Language Models (LLMs) u
 
 The project contains Jupyter Notebook examples showing different fine-tuning approaches:
 
-1. `notebooks/basic_finetuning.ipynb` - Basic fine-tuning example
-2. `notebooks/advanced_finetuning.ipynb` - More advanced techniques
+### GRPO
+- `grpo/Qwen2_5_(3B)_GRPO.ipynb`: Fine-tune the Qwen-2.5 3B model on the GSM8K dataset using GRPO (Group Relative Policy Optimization).
 
 ## Requirements
 
